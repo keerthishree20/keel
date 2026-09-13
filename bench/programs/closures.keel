@@ -1,0 +1,12 @@
+// Captured variables read and written through upvalues.
+fn counter() {
+    let count = 0;
+    return fn() { count = count + 1; return count; };
+}
+fn run() {
+    let next = counter();
+    let last = 0;
+    for (let i = 0; i < 150000; i = i + 1) { last = next(); }
+    return last;
+}
+print(run());

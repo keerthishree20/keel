@@ -1,0 +1,11 @@
+// Allocation pressure. Almost every list becomes garbage immediately, which is
+// what the collector exists to deal with.
+fn run() {
+    let kept = 0;
+    for (let i = 0; i < 120000; i = i + 1) {
+        let pair = [i, [i, i]];
+        kept = kept + pair[1][0] % 3;
+    }
+    return kept;
+}
+print(run());

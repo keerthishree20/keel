@@ -1,0 +1,10 @@
+// A tight loop over local variables. Where resolving names to stack slots
+// ahead of time should matter most.
+fn run() {
+    let total = 0;
+    for (let i = 0; i < 400000; i = i + 1) {
+        total = total + i % 7;
+    }
+    return total;
+}
+print(run());

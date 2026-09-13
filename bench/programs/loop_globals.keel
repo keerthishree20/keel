@@ -1,0 +1,8 @@
+// The same loop at global scope. Every name is now a dictionary lookup in both
+// engines, so the VM's slot advantage is gone. The honest control for the
+// benchmark above.
+let total = 0;
+for (let i = 0; i < 400000; i = i + 1) {
+    total = total + i % 7;
+}
+print(total);

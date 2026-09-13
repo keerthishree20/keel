@@ -1,0 +1,100 @@
+[
+  {
+    "program": "closures",
+    "output": [
+      "150000"
+    ],
+    "tree_ms": 1351.5,
+    "vm_ms": 730.5,
+    "compile_ms": 0.17,
+    "speedup": 1.85,
+    "gc_collections": 0,
+    "gc_freed": 0,
+    "gc_pause_total_ms": 0.0,
+    "gc_pause_max_ms": 0.0
+  },
+  {
+    "program": "fib",
+    "output": [
+      "46368"
+    ],
+    "tree_ms": 1337.1,
+    "vm_ms": 453.9,
+    "compile_ms": 0.11,
+    "speedup": 2.95,
+    "gc_collections": 0,
+    "gc_freed": 0,
+    "gc_pause_total_ms": 0.0,
+    "gc_pause_max_ms": 0.0
+  },
+  {
+    "program": "garbage",
+    "output": [
+      "120000"
+    ],
+    "tree_ms": 1214.8,
+    "vm_ms": 1166.4,
+    "compile_ms": 0.14,
+    "speedup": 1.04,
+    "gc_collections": 234,
+    "gc_freed": 239614,
+    "gc_pause_total_ms": 53.972,
+    "gc_pause_max_ms": 0.274
+  },
+  {
+    "program": "lists",
+    "output": [
+      "4999950000"
+    ],
+    "tree_ms": 1199.6,
+    "vm_ms": 778.4,
+    "compile_ms": 0.17,
+    "speedup": 1.54,
+    "gc_collections": 0,
+    "gc_freed": 0,
+    "gc_pause_total_ms": 0.0,
+    "gc_pause_max_ms": 0.0
+  },
+  {
+    "program": "loop_globals",
+    "output": [
+      "1199997"
+    ],
+    "tree_ms": 2429.2,
+    "vm_ms": 1552.9,
+    "compile_ms": 0.11,
+    "speedup": 1.56,
+    "gc_collections": 0,
+    "gc_freed": 0,
+    "gc_pause_total_ms": 0.0,
+    "gc_pause_max_ms": 0.0
+  },
+  {
+    "program": "loop_locals",
+    "output": [
+      "1199997"
+    ],
+    "tree_ms": 2447.3,
+    "vm_ms": 1268.8,
+    "compile_ms": 0.12,
+    "speedup": 1.93,
+    "gc_collections": 0,
+    "gc_freed": 0,
+    "gc_pause_total_ms": 0.0,
+    "gc_pause_max_ms": 0.0
+  },
+  {
+    "program": "nested",
+    "output": [
+      "4499999"
+    ],
+    "tree_ms": 1175.1,
+    "vm_ms": 645.2,
+    "compile_ms": 0.17,
+    "speedup": 1.82,
+    "gc_collections": 0,
+    "gc_freed": 0,
+    "gc_pause_total_ms": 0.0,
+    "gc_pause_max_ms": 0.0
+  }
+]

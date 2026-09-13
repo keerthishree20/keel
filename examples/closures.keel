@@ -1,0 +1,26 @@
+// Closures, lists and recursion in one place.
+fn make_accumulator(start) {
+    let total = start;
+    return fn(amount) {
+        total = total + amount;
+        return total;
+    };
+}
+
+let wallet = make_accumulator(100);
+wallet(25);
+print(wallet(-40));
+
+fn map(xs, f) {
+    let out = [];
+    for (let i = 0; i < len(xs); i = i + 1) push(out, f(xs[i]));
+    return out;
+}
+
+print(map([1, 2, 3, 4], fn(n) { return n * n; }));
+
+fn hanoi(n, from, to, via) {
+    if (n == 0) return 0;
+    return hanoi(n - 1, from, via, to) + 1 + hanoi(n - 1, via, to, from);
+}
+print("moves for 10 discs: " + str(hanoi(10, "a", "c", "b")));

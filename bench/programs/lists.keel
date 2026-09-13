@@ -1,0 +1,9 @@
+// Building a list and indexing into it.
+fn run() {
+    let xs = [];
+    for (let i = 0; i < 100000; i = i + 1) push(xs, i);
+    let total = 0;
+    for (let i = 0; i < len(xs); i = i + 1) total = total + xs[i];
+    return total;
+}
+print(run());
