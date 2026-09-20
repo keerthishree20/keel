@@ -1,5 +1,7 @@
 # Keel
 
+[![tests](https://github.com/keerthishree20/keel/actions/workflows/ci.yml/badge.svg)](https://github.com/keerthishree20/keel/actions/workflows/ci.yml)
+
 A small language with two complete implementations: a tree-walking interpreter
 and a bytecode compiler with a stack virtual machine and a mark-and-sweep garbage
 collector. Pure Python, no dependencies.
